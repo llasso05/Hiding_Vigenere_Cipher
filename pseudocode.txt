@@ -1,0 +1,20 @@
+Build assets:
+In Word, create an empty doc with desired formatting/styles (template)
+In Word, create an innocuous fake message that will be visible & have enough     blank lines to hold the real message
+In Word, create the real message that will be hidden
+Import docx to allow manipulation of Word docs with Python
+Use docx module to load the fake & real messages as lists
+Use docx to assign the empty doc to a variable
+Use docx to add letterhead banner to empty doc
+Make counter variable for lines in real message
+Define function to format paragraph spacing with docx
+For line in fake message:
+    If line is blank and there are still lines in the real message:
+        Use docx & counter to fill blank with line from real message
+        Use docx to set real message font color to white
+        Advance counter for real message
+    Otherwise:
+        Use docx to write fake line
+    Run paragraph spacing function
+Use docx to save final Word document
+
